@@ -1,0 +1,642 @@
+{
+  "date": "2026-11-05",
+  "modeles": {
+    "actuel": "claude-opus-5-5",
+    "ancien": "claude-haiku-4-5"
+  },
+  "enveloppe": {
+    "claude-opus-5-5": {
+      "M1": 8,
+      "M1_controles": [
+        8,
+        8
+      ],
+      "M2": [
+        8,
+        8,
+        8
+      ],
+      "retour_ligne_final": 0,
+      "stabilite": [
+        684,
+        684,
+        684
+      ]
+    },
+    "claude-haiku-4-5": {
+      "M1": 7,
+      "M1_controles": [
+        7,
+        7
+      ],
+      "M2": [
+        7,
+        7,
+        7
+      ],
+      "retour_ligne_final": 0,
+      "stabilite": [
+        527,
+        527,
+        527
+      ]
+    }
+  },
+  "phrase": {
+    "claude-opus-5-5": 12,
+    "claude-haiku-4-5": 10
+  },
+  "prime": {
+    "ntrex": {
+      "nom": "NTREX-128 (actualité, 1 997 phrases)",
+      "tokens": {
+        "claude-opus-5-5": {
+          "en": 83987,
+          "fr": 122128
+        },
+        "claude-haiku-4-5": {
+          "en": 58804,
+          "fr": 92054
+        }
+      },
+      "prime": {
+        "claude-opus-5-5": 1.454129805803279,
+        "claude-haiku-4-5": 1.5654377253248077
+      }
+    },
+    "mdn-brut": {
+      "nom": "MDN, 4 pages alignées (Markdown, liens compris)",
+      "tokens": {
+        "claude-opus-5-5": {
+          "en": 20987,
+          "fr": 31313
+        },
+        "claude-haiku-4-5": {
+          "en": 15062,
+          "fr": 22450
+        }
+      },
+      "prime": {
+        "claude-opus-5-5": 1.4920188688235574,
+        "claude-haiku-4-5": 1.4905059089098394
+      }
+    },
+    "mdn-prose": {
+      "nom": "MDN, 4 pages alignées (prose stricte)",
+      "tokens": {
+        "claude-opus-5-5": {
+          "en": 18061,
+          "fr": 27766
+        },
+        "claude-haiku-4-5": {
+          "en": 12964,
+          "fr": 20058
+        }
+      },
+      "prime": {
+        "claude-opus-5-5": 1.5373456619234815,
+        "claude-haiku-4-5": 1.547207651959272
+      }
+    },
+    "corpus": {
+      "nom": "Texte parallèle rédigé pour ces mesures (~280 mots)",
+      "tokens": {
+        "claude-opus-5-5": {
+          "en": 455,
+          "fr": 676
+        },
+        "claude-haiku-4-5": {
+          "en": 331,
+          "fr": 520
+        }
+      },
+      "prime": {
+        "claude-opus-5-5": 1.4857142857142858,
+        "claude-haiku-4-5": 1.5709969788519638
+      }
+    }
+  },
+  "mots": {
+    "ntrex:fr": {
+      "A": 47486,
+      "B": 50130,
+      "C": 47415,
+      "WC": 48791,
+      "tokens": 122128,
+      "mots_pour_1000_tokens_C": 388.2402069959387
+    },
+    "ntrex:en": {
+      "A": 42108,
+      "B": 42110,
+      "C": 41902,
+      "WC": 42034,
+      "tokens": 83987,
+      "mots_pour_1000_tokens_C": 498.91054567968854
+    },
+    "mdn-brut:fr": {
+      "A": 11707,
+      "B": 12215,
+      "C": 10778,
+      "WC": 11143,
+      "tokens": 31313,
+      "mots_pour_1000_tokens_C": 344.2020885894038
+    },
+    "mdn-brut:en": {
+      "A": 10479,
+      "B": 10479,
+      "C": 9691,
+      "WC": 9971,
+      "tokens": 20987,
+      "mots_pour_1000_tokens_C": 461.76204316958115
+    },
+    "mdn-prose:fr": {
+      "A": 10819,
+      "B": 11332,
+      "C": 10737,
+      "WC": 11198,
+      "tokens": 27766,
+      "mots_pour_1000_tokens_C": 386.69595908665275
+    },
+    "mdn-prose:en": {
+      "A": 9712,
+      "B": 9712,
+      "C": 9666,
+      "WC": 9949,
+      "tokens": 18061,
+      "mots_pour_1000_tokens_C": 535.1863130502187
+    },
+    "corpus:fr": {
+      "A": 281,
+      "B": 301,
+      "C": 281,
+      "WC": 285,
+      "tokens": 676,
+      "mots_pour_1000_tokens_C": 415.6804733727811
+    },
+    "corpus:en": {
+      "A": 276,
+      "B": 276,
+      "C": 276,
+      "WC": 276,
+      "tokens": 455,
+      "mots_pour_1000_tokens_C": 606.5934065934066
+    }
+  },
+  "repere": {
+    "fr": [
+      386.69595908665275,
+      415.6804733727811
+    ],
+    "en": [
+      498.91054567968854,
+      606.5934065934066
+    ]
+  },
+  "code": {
+    "code:Python": {
+      "lignes_non_vides": 758,
+      "lignes_non_ascii": 0,
+      "tokens": 11972,
+      "tokens_ancien": 9016
+    },
+    "code:TypeScript": {
+      "lignes_non_vides": 1144,
+      "lignes_non_ascii": 0,
+      "tokens": 21267,
+      "tokens_ancien": 15655
+    },
+    "code:JavaScript": {
+      "lignes_non_vides": 908,
+      "lignes_non_ascii": 0,
+      "tokens": 10146,
+      "tokens_ancien": 8350
+    },
+    "code:Go": {
+      "lignes_non_vides": 1192,
+      "lignes_non_ascii": 0,
+      "tokens": 15266,
+      "tokens_ancien": 12401
+    },
+    "code:Java": {
+      "lignes_non_vides": 295,
+      "lignes_non_ascii": 0,
+      "tokens": 4771,
+      "tokens_ancien": 3762
+    },
+    "code:PHP": {
+      "lignes_non_vides": 1840,
+      "lignes_non_ascii": 2,
+      "tokens": 25821,
+      "tokens_ancien": 21268
+    }
+  },
+  "code_median_tokens_par_ligne": 14.913673712286336,
+  "appels": [
+    {
+      "modele": "claude-opus-5-5",
+      "etiquette": "témoin a",
+      "sha256_texte": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+      "caracteres": 1,
+      "input_tokens": 9
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "etiquette": "témoin b",
+      "sha256_texte": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+      "caracteres": 1,
+      "input_tokens": 9
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "etiquette": "témoin x",
+      "sha256_texte": "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881",
+      "caracteres": 1,
+      "input_tokens": 9
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "etiquette": "M2 phrase",
+      "sha256_texte": "4cef1065dd2f2ef89dbb4c0e790571110e0dafc044350dfa3ec0295e9ca7f65a",
+      "caracteres": 34,
+      "input_tokens": 22
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "etiquette": "M2 phrase doublé",
+      "sha256_texte": "7e8b589812aa45dbf21fd4116019a5fae9b8b3667ed6bab21beb22def7cb2a94",
+      "caracteres": 69,
+      "input_tokens": 36
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "etiquette": "M2 corpus fr",
+      "sha256_texte": "88be36ab6cee149e57344ad68621953b4796d81b4ac852e4b020b94e10c63362",
+      "caracteres": 1737,
+      "input_tokens": 686
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "etiquette": "M2 corpus fr doublé",
+      "sha256_texte": "db2b23a7997200addd32d8618de0c7a2fd9dc26bc33c84d2f440c49f23774516",
+      "caracteres": 3475,
+      "input_tokens": 1364
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "etiquette": "M2 corpus en",
+      "sha256_texte": "50018ab68127dc461fdc69452af1328ef4d59f7bb771960e5794e875c3ba26e6",
+      "caracteres": 1589,
+      "input_tokens": 465
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "etiquette": "M2 corpus en doublé",
+      "sha256_texte": "02da6a7c663df1b54e51f38eaf20791fce2edef50edcc467ac27b798391eaf71",
+      "caracteres": 3179,
+      "input_tokens": 922
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "etiquette": "phrase + \\n",
+      "sha256_texte": "dc28d34556f1450cdde85959c70347882159926e72420d04beb5240bb10e54c0",
+      "caracteres": 33,
+      "input_tokens": 20
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "etiquette": "phrase",
+      "sha256_texte": "07ffd9a17d74cbaa7c6ac4a29a0114eda737a5a3178c8d7a927ead7ad91e4fed",
+      "caracteres": 32,
+      "input_tokens": 20
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "etiquette": "stabilité 1",
+      "sha256_texte": "19cbaff2302548de1706efe97524b5e1bce8c15cb11cb000028e87581188a544",
+      "caracteres": 1736,
+      "input_tokens": 684
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "etiquette": "stabilité 2",
+      "sha256_texte": "19cbaff2302548de1706efe97524b5e1bce8c15cb11cb000028e87581188a544",
+      "caracteres": 1736,
+      "input_tokens": 684
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "etiquette": "stabilité 3",
+      "sha256_texte": "19cbaff2302548de1706efe97524b5e1bce8c15cb11cb000028e87581188a544",
+      "caracteres": 1736,
+      "input_tokens": 684
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "etiquette": "témoin a",
+      "sha256_texte": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+      "caracteres": 1,
+      "input_tokens": 8
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "etiquette": "témoin b",
+      "sha256_texte": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+      "caracteres": 1,
+      "input_tokens": 8
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "etiquette": "témoin x",
+      "sha256_texte": "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881",
+      "caracteres": 1,
+      "input_tokens": 8
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "etiquette": "M2 phrase",
+      "sha256_texte": "4cef1065dd2f2ef89dbb4c0e790571110e0dafc044350dfa3ec0295e9ca7f65a",
+      "caracteres": 34,
+      "input_tokens": 18
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "etiquette": "M2 phrase doublé",
+      "sha256_texte": "7e8b589812aa45dbf21fd4116019a5fae9b8b3667ed6bab21beb22def7cb2a94",
+      "caracteres": 69,
+      "input_tokens": 29
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "etiquette": "M2 corpus fr",
+      "sha256_texte": "88be36ab6cee149e57344ad68621953b4796d81b4ac852e4b020b94e10c63362",
+      "caracteres": 1737,
+      "input_tokens": 528
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "etiquette": "M2 corpus fr doublé",
+      "sha256_texte": "db2b23a7997200addd32d8618de0c7a2fd9dc26bc33c84d2f440c49f23774516",
+      "caracteres": 3475,
+      "input_tokens": 1049
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "etiquette": "M2 corpus en",
+      "sha256_texte": "50018ab68127dc461fdc69452af1328ef4d59f7bb771960e5794e875c3ba26e6",
+      "caracteres": 1589,
+      "input_tokens": 339
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "etiquette": "M2 corpus en doublé",
+      "sha256_texte": "02da6a7c663df1b54e51f38eaf20791fce2edef50edcc467ac27b798391eaf71",
+      "caracteres": 3179,
+      "input_tokens": 671
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "etiquette": "phrase + \\n",
+      "sha256_texte": "dc28d34556f1450cdde85959c70347882159926e72420d04beb5240bb10e54c0",
+      "caracteres": 33,
+      "input_tokens": 17
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "etiquette": "phrase",
+      "sha256_texte": "07ffd9a17d74cbaa7c6ac4a29a0114eda737a5a3178c8d7a927ead7ad91e4fed",
+      "caracteres": 32,
+      "input_tokens": 17
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "etiquette": "stabilité 1",
+      "sha256_texte": "19cbaff2302548de1706efe97524b5e1bce8c15cb11cb000028e87581188a544",
+      "caracteres": 1736,
+      "input_tokens": 527
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "etiquette": "stabilité 2",
+      "sha256_texte": "19cbaff2302548de1706efe97524b5e1bce8c15cb11cb000028e87581188a544",
+      "caracteres": 1736,
+      "input_tokens": 527
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "etiquette": "stabilité 3",
+      "sha256_texte": "19cbaff2302548de1706efe97524b5e1bce8c15cb11cb000028e87581188a544",
+      "caracteres": 1736,
+      "input_tokens": 527
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "etiquette": "phrase",
+      "sha256_texte": "07ffd9a17d74cbaa7c6ac4a29a0114eda737a5a3178c8d7a927ead7ad91e4fed",
+      "caracteres": 32,
+      "input_tokens": 20
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "etiquette": "phrase",
+      "sha256_texte": "07ffd9a17d74cbaa7c6ac4a29a0114eda737a5a3178c8d7a927ead7ad91e4fed",
+      "caracteres": 32,
+      "input_tokens": 17
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "etiquette": "ntrex en",
+      "sha256_texte": "389e8f5796c66db4f646dfad33e1ec622d74767af5ef112b42a1f2cd814df3cc",
+      "caracteres": 251714,
+      "input_tokens": 83995
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "etiquette": "ntrex fr",
+      "sha256_texte": "1dd80d337f6a75c6ed579a95f09ca9b85d87d6e488d0a428c5f89cca99553136",
+      "caracteres": 297102,
+      "input_tokens": 122136
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "etiquette": "ntrex en",
+      "sha256_texte": "389e8f5796c66db4f646dfad33e1ec622d74767af5ef112b42a1f2cd814df3cc",
+      "caracteres": 251714,
+      "input_tokens": 58811
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "etiquette": "ntrex fr",
+      "sha256_texte": "1dd80d337f6a75c6ed579a95f09ca9b85d87d6e488d0a428c5f89cca99553136",
+      "caracteres": 297102,
+      "input_tokens": 92061
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "etiquette": "mdn-brut en",
+      "sha256_texte": "1917fc638545027b25cb67e971d8199af5274e542d0037f10db5df265033d35a",
+      "caracteres": 67021,
+      "input_tokens": 20995
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "etiquette": "mdn-brut fr",
+      "sha256_texte": "9cf5a69ed829a191581996059a7b6040b898109b7a9bd40f507e9554e93f9030",
+      "caracteres": 78046,
+      "input_tokens": 31321
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "etiquette": "mdn-brut en",
+      "sha256_texte": "1917fc638545027b25cb67e971d8199af5274e542d0037f10db5df265033d35a",
+      "caracteres": 67021,
+      "input_tokens": 15069
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "etiquette": "mdn-brut fr",
+      "sha256_texte": "9cf5a69ed829a191581996059a7b6040b898109b7a9bd40f507e9554e93f9030",
+      "caracteres": 78046,
+      "input_tokens": 22457
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "etiquette": "mdn-prose en",
+      "sha256_texte": "7afe826288c2b27b824fec741b81835db4d12eebf6af3b4b2c62a54e2f4256b0",
+      "caracteres": 61305,
+      "input_tokens": 18069
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "etiquette": "mdn-prose fr",
+      "sha256_texte": "06375ad496763eefef7f0c68d7356a4f0196f82d459bb1b21eed2a90ce736e8e",
+      "caracteres": 71694,
+      "input_tokens": 27774
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "etiquette": "mdn-prose en",
+      "sha256_texte": "7afe826288c2b27b824fec741b81835db4d12eebf6af3b4b2c62a54e2f4256b0",
+      "caracteres": 61305,
+      "input_tokens": 12971
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "etiquette": "mdn-prose fr",
+      "sha256_texte": "06375ad496763eefef7f0c68d7356a4f0196f82d459bb1b21eed2a90ce736e8e",
+      "caracteres": 71694,
+      "input_tokens": 20065
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "etiquette": "corpus en",
+      "sha256_texte": "584f4f07512368e4feef1f8803b339354aa5d8a10023c80e6a72c54cc0f60041",
+      "caracteres": 1588,
+      "input_tokens": 463
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "etiquette": "corpus fr",
+      "sha256_texte": "19cbaff2302548de1706efe97524b5e1bce8c15cb11cb000028e87581188a544",
+      "caracteres": 1736,
+      "input_tokens": 684
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "etiquette": "corpus en",
+      "sha256_texte": "584f4f07512368e4feef1f8803b339354aa5d8a10023c80e6a72c54cc0f60041",
+      "caracteres": 1588,
+      "input_tokens": 338
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "etiquette": "corpus fr",
+      "sha256_texte": "19cbaff2302548de1706efe97524b5e1bce8c15cb11cb000028e87581188a544",
+      "caracteres": 1736,
+      "input_tokens": 527
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "etiquette": "code:Python",
+      "sha256_texte": "3d2089736ced93b2b405624a943f866d22652b17df06a85eb010f86272fc3e7d",
+      "caracteres": 34072,
+      "input_tokens": 11980
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "etiquette": "code:Python ancien",
+      "sha256_texte": "3d2089736ced93b2b405624a943f866d22652b17df06a85eb010f86272fc3e7d",
+      "caracteres": 34072,
+      "input_tokens": 9023
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "etiquette": "code:TypeScript",
+      "sha256_texte": "6b11f976881846307db3e857904c84dcd2728515c8c616d35047fb2f89423dfa",
+      "caracteres": 53421,
+      "input_tokens": 21275
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "etiquette": "code:TypeScript ancien",
+      "sha256_texte": "6b11f976881846307db3e857904c84dcd2728515c8c616d35047fb2f89423dfa",
+      "caracteres": 53421,
+      "input_tokens": 15662
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "etiquette": "code:JavaScript",
+      "sha256_texte": "efe24afe2978d0bf2ad52d5b163a7af0d25d965e5dfc75979c4fcc883c60a510",
+      "caracteres": 25089,
+      "input_tokens": 10154
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "etiquette": "code:JavaScript ancien",
+      "sha256_texte": "efe24afe2978d0bf2ad52d5b163a7af0d25d965e5dfc75979c4fcc883c60a510",
+      "caracteres": 25089,
+      "input_tokens": 8357
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "etiquette": "code:Go",
+      "sha256_texte": "16fa8e209f272e759400495e2ea1ba30833eb47c09c2bb2e48f9dba3eea080f5",
+      "caracteres": 34480,
+      "input_tokens": 15274
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "etiquette": "code:Go ancien",
+      "sha256_texte": "16fa8e209f272e759400495e2ea1ba30833eb47c09c2bb2e48f9dba3eea080f5",
+      "caracteres": 34480,
+      "input_tokens": 12408
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "etiquette": "code:Java",
+      "sha256_texte": "452c6456b0846359cf8d01f98a6be493f8d5d4eafedba19f2d9c0946eac40ee9",
+      "caracteres": 12793,
+      "input_tokens": 4779
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "etiquette": "code:Java ancien",
+      "sha256_texte": "452c6456b0846359cf8d01f98a6be493f8d5d4eafedba19f2d9c0946eac40ee9",
+      "caracteres": 12793,
+      "input_tokens": 3769
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "etiquette": "code:PHP",
+      "sha256_texte": "4c9bd077de3fa26d279cdfb71878d9b1a21fed2676c584be4018033f95d4364a",
+      "caracteres": 65477,
+      "input_tokens": 25829
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "etiquette": "code:PHP ancien",
+      "sha256_texte": "4c9bd077de3fa26d279cdfb71878d9b1a21fed2676c584be4018033f95d4364a",
+      "caracteres": 65477,
+      "input_tokens": 21275
+    }
+  ]
+}
