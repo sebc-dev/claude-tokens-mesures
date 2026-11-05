@@ -1,0 +1,921 @@
+{
+  "date": "2026-11-05",
+  "resultats": [
+    {
+      "modele": "claude-opus-5-5",
+      "langue": "fr",
+      "texte": "corrige le calcul du net à payer",
+      "total": 12,
+      "mots_ambigus": [],
+      "essais": [
+        {
+          "convention": "espace en tête de mot",
+          "mots": [
+            "corrige",
+            " le",
+            " calcul",
+            " du",
+            " net",
+            " à",
+            " payer"
+          ],
+          "tokens_par_mot": [
+            3,
+            2,
+            4,
+            2,
+            2,
+            2,
+            3
+          ],
+          "somme": 18
+        },
+        {
+          "convention": "espace en fin de mot",
+          "mots": [
+            "corrige ",
+            "le ",
+            "calcul ",
+            "du ",
+            "net ",
+            "à ",
+            "payer"
+          ],
+          "tokens_par_mot": [
+            3,
+            1,
+            3,
+            1,
+            1,
+            1,
+            2
+          ],
+          "somme": 12
+        }
+      ],
+      "convention_retenue": "espace en fin de mot",
+      "courbes_prefixes": [
+        [
+          1,
+          1,
+          2,
+          2,
+          2,
+          3,
+          3
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2,
+          2,
+          2,
+          3,
+          3
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2,
+          2,
+          2,
+          2
+        ]
+      ],
+      "monotone": true,
+      "segments": [
+        "co",
+        "rri",
+        "ge ",
+        "le ",
+        "c",
+        "alc",
+        "ul ",
+        "du ",
+        "net ",
+        "à ",
+        "p",
+        "ayer"
+      ],
+      "valide": true
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "langue": "en",
+      "texte": "fix the net pay calculation",
+      "total": 9,
+      "mots_ambigus": [
+        "« calculation » (3 tokens ; préfixes : 1, 2, 2, 2, 3, 3, 3, 3, 3, 4, 3)"
+      ],
+      "essais": [
+        {
+          "convention": "espace en tête de mot",
+          "mots": [
+            "fix",
+            " the",
+            " net",
+            " pay",
+            " calculation"
+          ],
+          "tokens_par_mot": [
+            2,
+            2,
+            2,
+            3,
+            4
+          ],
+          "somme": 13
+        },
+        {
+          "convention": "espace en fin de mot",
+          "mots": [
+            "fix ",
+            "the ",
+            "net ",
+            "pay ",
+            "calculation"
+          ],
+          "tokens_par_mot": [
+            2,
+            1,
+            1,
+            2,
+            3
+          ],
+          "somme": 9
+        }
+      ],
+      "convention_retenue": "espace en fin de mot",
+      "courbes_prefixes": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          4,
+          3
+        ]
+      ],
+      "monotone": false,
+      "segments": [
+        "f",
+        "ix ",
+        "the ",
+        "net ",
+        "p",
+        "ay ",
+        "c",
+        "alc",
+        "ulati",
+        "on"
+      ],
+      "valide": false
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "langue": "fr",
+      "texte": "corrige le calcul du net à payer",
+      "total": 10,
+      "mots_ambigus": [],
+      "essais": [
+        {
+          "convention": "espace en tête de mot",
+          "mots": [
+            "corrige",
+            " le",
+            " calcul",
+            " du",
+            " net",
+            " à",
+            " payer"
+          ],
+          "tokens_par_mot": [
+            2,
+            1,
+            2,
+            1,
+            1,
+            1,
+            2
+          ],
+          "somme": 10
+        },
+        {
+          "convention": "espace en fin de mot",
+          "mots": [
+            "corrige ",
+            "le ",
+            "calcul ",
+            "du ",
+            "net ",
+            "à ",
+            "payer"
+          ],
+          "tokens_par_mot": [
+            2,
+            1,
+            2,
+            1,
+            1,
+            1,
+            2
+          ],
+          "somme": 10
+        }
+      ],
+      "convention_retenue": "espace en tête de mot",
+      "courbes_prefixes": [
+        [
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          2,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          2,
+          2
+        ]
+      ],
+      "monotone": true,
+      "segments": [
+        "cor",
+        "rige",
+        " le",
+        " calc",
+        "ul",
+        " du",
+        " net",
+        " à",
+        " pay",
+        "er"
+      ],
+      "valide": true
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "langue": "en",
+      "texte": "fix the net pay calculation",
+      "total": 5,
+      "mots_ambigus": [],
+      "essais": [
+        {
+          "convention": "espace en tête de mot",
+          "mots": [
+            "fix",
+            " the",
+            " net",
+            " pay",
+            " calculation"
+          ],
+          "tokens_par_mot": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "somme": 5
+        },
+        {
+          "convention": "espace en fin de mot",
+          "mots": [
+            "fix ",
+            "the ",
+            "net ",
+            "pay ",
+            "calculation"
+          ],
+          "tokens_par_mot": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "somme": 5
+        }
+      ],
+      "convention_retenue": "espace en tête de mot",
+      "courbes_prefixes": [
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "monotone": true,
+      "segments": [
+        "fix",
+        " the",
+        " net",
+        " pay",
+        " calculation"
+      ],
+      "valide": true
+    }
+  ],
+  "appels": [
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "a",
+      "input_tokens": 9
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "corrige le calcul du net à payer",
+      "input_tokens": 20
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "corrige",
+      "input_tokens": 11
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": " le",
+      "input_tokens": 10
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": " calcul",
+      "input_tokens": 12
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": " du",
+      "input_tokens": 10
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": " net",
+      "input_tokens": 10
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": " à",
+      "input_tokens": 10
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": " payer",
+      "input_tokens": 11
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "corrige",
+      "input_tokens": 11
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "le",
+      "input_tokens": 9
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "calcul",
+      "input_tokens": 11
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "du",
+      "input_tokens": 9
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "net",
+      "input_tokens": 9
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "à",
+      "input_tokens": 9
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "payer",
+      "input_tokens": 10
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "c",
+      "input_tokens": 9
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "co",
+      "input_tokens": 9
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "cor",
+      "input_tokens": 10
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "corr",
+      "input_tokens": 10
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "corri",
+      "input_tokens": 10
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "corrig",
+      "input_tokens": 11
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "corrige",
+      "input_tokens": 11
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "c",
+      "input_tokens": 9
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "ca",
+      "input_tokens": 10
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "cal",
+      "input_tokens": 10
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "calc",
+      "input_tokens": 10
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "calcu",
+      "input_tokens": 11
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "calcul",
+      "input_tokens": 11
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "p",
+      "input_tokens": 9
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "pa",
+      "input_tokens": 10
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "pay",
+      "input_tokens": 10
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "paye",
+      "input_tokens": 10
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "payer",
+      "input_tokens": 10
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "fix the net pay calculation",
+      "input_tokens": 17
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "fix",
+      "input_tokens": 10
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": " the",
+      "input_tokens": 10
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": " net",
+      "input_tokens": 10
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": " pay",
+      "input_tokens": 11
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": " calculation",
+      "input_tokens": 12
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "fix",
+      "input_tokens": 10
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "the",
+      "input_tokens": 9
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "net",
+      "input_tokens": 9
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "pay",
+      "input_tokens": 10
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "calculation",
+      "input_tokens": 11
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "f",
+      "input_tokens": 9
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "fi",
+      "input_tokens": 10
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "fix",
+      "input_tokens": 10
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "p",
+      "input_tokens": 9
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "pa",
+      "input_tokens": 10
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "pay",
+      "input_tokens": 10
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "c",
+      "input_tokens": 9
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "ca",
+      "input_tokens": 10
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "cal",
+      "input_tokens": 10
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "calc",
+      "input_tokens": 10
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "calcu",
+      "input_tokens": 11
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "calcul",
+      "input_tokens": 11
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "calcula",
+      "input_tokens": 11
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "calculat",
+      "input_tokens": 11
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "calculati",
+      "input_tokens": 11
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "calculatio",
+      "input_tokens": 12
+    },
+    {
+      "modele": "claude-opus-5-5",
+      "texte": "calculation",
+      "input_tokens": 11
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": "a",
+      "input_tokens": 8
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": "corrige le calcul du net à payer",
+      "input_tokens": 17
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": "corrige",
+      "input_tokens": 9
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": " le",
+      "input_tokens": 8
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": " calcul",
+      "input_tokens": 9
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": " du",
+      "input_tokens": 8
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": " net",
+      "input_tokens": 8
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": " à",
+      "input_tokens": 8
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": " payer",
+      "input_tokens": 9
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": "corrige",
+      "input_tokens": 9
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": "le",
+      "input_tokens": 8
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": "calcul",
+      "input_tokens": 9
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": "du",
+      "input_tokens": 8
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": "net",
+      "input_tokens": 8
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": "à",
+      "input_tokens": 8
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": "payer",
+      "input_tokens": 9
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": "c",
+      "input_tokens": 8
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": "co",
+      "input_tokens": 8
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": "cor",
+      "input_tokens": 8
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": "corr",
+      "input_tokens": 9
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": "corri",
+      "input_tokens": 9
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": "corrig",
+      "input_tokens": 9
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": "corrige",
+      "input_tokens": 9
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": " c",
+      "input_tokens": 8
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": " ca",
+      "input_tokens": 8
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": " cal",
+      "input_tokens": 8
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": " calc",
+      "input_tokens": 8
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": " calcu",
+      "input_tokens": 9
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": " calcul",
+      "input_tokens": 9
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": " p",
+      "input_tokens": 8
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": " pa",
+      "input_tokens": 8
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": " pay",
+      "input_tokens": 8
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": " paye",
+      "input_tokens": 9
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": " payer",
+      "input_tokens": 9
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": "fix the net pay calculation",
+      "input_tokens": 12
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": "fix",
+      "input_tokens": 8
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": " the",
+      "input_tokens": 8
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": " net",
+      "input_tokens": 8
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": " pay",
+      "input_tokens": 8
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": " calculation",
+      "input_tokens": 8
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": "fix",
+      "input_tokens": 8
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": "the",
+      "input_tokens": 8
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": "net",
+      "input_tokens": 8
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": "pay",
+      "input_tokens": 8
+    },
+    {
+      "modele": "claude-haiku-4-5",
+      "texte": "calculation",
+      "input_tokens": 8
+    }
+  ]
+}

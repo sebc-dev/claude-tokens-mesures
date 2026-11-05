@@ -16,6 +16,9 @@ Le détail complet est dans [`resultats/2026-11-05/resultats.md`](resultats/2026
 | Le tokenizer actuel produit-il plus de tokens que l'ancien ? | Oui : **+30 à +43 %** sur la prose, **+21 à +36 %** sur le code |
 | Combien de tokens pèse une ligne de code en anglais ? | Médiane de **14,9 tokens par ligne non vide** (de 11,2 à 18,6), soit **~7 500 tokens pour 500 lignes** |
 
+| Comment la phrase se découpe-t-elle ? | **`co · rri · ge␣ · le␣ · c · alc · ul␣ · du␣ · net␣ · à␣ · p · ayer`** (découpage estimé et validé, voir [`decoupage.md`](resultats/2026-11-05/decoupage.md)). Le tokenizer actuel semble rattacher l'espace à la **fin** du mot, et non au début du suivant. |
+| Et la même phrase en anglais ? | « fix the net pay calculation » : **9 tokens** (5 sur l'ancien tokenizer) |
+
 Pour comparaison : [Serval, *The Invisible Language Tax* (arXiv:2609.39001)](https://arxiv.org/abs/2609.39001) publie un facteur de 1,45 (IC 95 % 1,44–1,47) pour le tokenizer Claude 5 sur NTREX-128. On retrouve exactement cette valeur.
 
 ## Méthode
@@ -29,6 +32,7 @@ Pour comparaison : [Serval, *The Invisible Language Tax* (arXiv:2609.39001)](htt
   - un court texte rédigé pour ces mesures (`corpus/`).
 - **Mots** : trois conventions sont comparées (élisions jointes, élisions séparées, traitement de texte). Sur de la prose, elles s'écartent d'au plus ~7 % en français et de moins de 1 % en anglais. Le repère utilise la convention « traitement de texte ».
 - **Code** : un fichier open source par langage (Python, TypeScript, JavaScript, Go, Java, PHP), sans texte non anglais (contrôle des lignes non ASCII). Seules les lignes non vides sont comptées.
+- **Découpage** (`decouper.mjs`) : le tokenizer n'est pas public, donc les coupures sont **estimées**. La phrase est découpée en mots selon deux conventions d'espace (en tête, « ␣le », ou en fin, « le␣ »), et on retient celle dont la somme des tokens par mot redonne le total. On sonde ensuite les préfixes à l'intérieur de chaque mot. Le découpage n'est validé que si chaque courbe de préfixes est croissante. Pour l'anglais, les mots sont validés, mais les coupures internes de « calculation » (3 tokens) restent ambiguës.
 - **Sources figées** : chaque source tierce est épinglée sur un commit et vérifiée par SHA-256 ([`sources.json`](sources.json)). Elle est téléchargée à la volée dans `.cache/` et n'est pas redistribuée ici.
 
 ## Rejouer les mesures
@@ -39,6 +43,7 @@ Prérequis : Node.js 20.6 ou plus récent (pour `--env-file`), et une clé API A
 cp .env.example .env        # puis renseigner ANTHROPIC_API_KEY
 node mesurer.mjs --verifier # télécharge les sources et vérifie leurs empreintes (sans clé)
 node --env-file=.env mesurer.mjs   # écrit resultats/<date>/resultats.md et mesures.json
+node --env-file=.env decouper.mjs  # écrit resultats/<date>/decoupage.md et decoupage.json
 ```
 
 Options : `--actuel <modèle>` et `--ancien <modèle>` pour comparer d'autres modèles. Si un tokenizer change, une nouvelle mesure s'ajoute dans un nouveau dossier daté, et les précédentes restent consultables.
@@ -65,6 +70,7 @@ Key results on `claude-opus-5-5` (5 November 2026):
 - **French needs 1.45× the tokens of English** on NTREX-128, which matches [Serval (arXiv:2609.39001)](https://arxiv.org/abs/2609.39001) exactly, and **1.49–1.54×** on MDN technical documentation.
 - **1,000 tokens ≈ 500–600 English words, ~400 French words** of prose.
 - **The current tokenizer yields 30–43 % more tokens** than the previous one (`claude-haiku-4-5`) on prose, and 21–36 % more on code.
+- **Estimated split** of « corrige le calcul du net à payer » (12 tokens): `co · rri · ge␣ · le␣ · c · alc · ul␣ · du␣ · net␣ · à␣ · p · ayer`. The current tokenizer appears to attach spaces to the **end** of words. « fix the net pay calculation » is 9 tokens.
 - **English source code: median of 14.9 tokens per non-empty line**, about 7,500 tokens for a 500-line file.
 
 Method, sources (pinned to commits and verified by SHA-256) and limitations are described above. The full results are in [`resultats/2026-11-05/resultats.md`](resultats/2026-11-05/resultats.md), and the raw log of every API call is in [`mesures.json`](resultats/2026-11-05/mesures.json). To reproduce: `cp .env.example .env`, set `ANTHROPIC_API_KEY`, then run `node --env-file=.env mesurer.mjs`.
